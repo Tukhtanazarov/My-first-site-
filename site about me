@@ -1,0 +1,41 @@
+# Define the HTML code for the website
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менин Сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        h1 {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Салам Vtyby сайтыма кош келдиңиз!</h1>
+    <p>Менин атым Нурсултан 
+Бул жерде менин сүрөтүм бар:</p>
+    <img src="image.png" alt="Менин сүрөтүм">
+</body>
+</html>
+"""
+
+# Save the HTML file
+html_path = "/mnt/data/index.html"
+with open(html_path, "w", encoding="utf-8") as file:
+    file.write(html_content)
+
+html_path
